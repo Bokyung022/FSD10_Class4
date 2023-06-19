@@ -1,0 +1,25 @@
+package June12th;
+
+import java.util.Scanner;
+
+public class MyProgram10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner kb = new Scanner(System.in);
+		int sum = 0;
+		int num = 0;
+		
+		do {
+			sum = sum + num;
+			System.out.println("Please give me positive num?");
+			num = kb.nextInt();
+		} while (num >= 0);
+		
+		System.out.println("The sum of positive num is " + sum);
+		kb.close();
+		
+	}
+
+}
